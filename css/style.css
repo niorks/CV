@@ -1,0 +1,32 @@
+/* @font-face */
+
+@font-face {
+  font-family: "Adventure";
+  src: url("../font/Adventure.otf");
+}
+
+body {
+    width: 100%;
+    background: url("../img/white_wall.png") top left repeat;
+}
+
+h1 {
+    color: red;
+    font-family: 'Adventure', sans-serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+    color: blue;
+    border-bottom:1px dashed green;
+}
+
+img {
+    width: 8%;
+    height: 8%;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
