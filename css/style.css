@@ -1,32 +1,59 @@
 /* @font-face */
 
 @font-face {
-  font-family: "Adventure";
-  src: url("../font/Adventure.otf");
+    font-family: "Adventure";
+    src: url("../font/Adventure.otf");
 }
 
-body {
-    width: 100%;
+html, body {
     background: url("../img/white_wall.png") top left repeat;
+    margin: 0;
+    height: 100%
 }
 
-h1 {
+h1, h5 {
     color: red;
     font-family: 'Adventure', sans-serif;
     text-shadow: 2px 2px 2px black;
+    text-align: center;
 }
 
 h2 {
     color: blue;
-    border-bottom:1px dashed green;
+    border-bottom: 1px dashed green;
+    text-align: center;
 }
 
 img {
-    width: 8%;
-    height: 8%;
+    float: right;
+    display: block;
+    width: 100px;
+    height: 120px;
 }
 
-.container {
-    width: 900px;
-    margin: 0 auto;
+.container, .sidebar {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sidebar {
+    float: left;
+    width: 10%;
+    margin-left: 0px;
+    border-radius: 0 20px 20px 0;
+    background: green;
+    height: 100%;
+}
+
+.content {
+    overflow: hidden;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    width: 25%;
+    margin-left: 7%;
+    margin-top: 5%;
 }
